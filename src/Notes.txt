@@ -1,1 +1,36 @@
-npm install firebase
+${process.env.REACT_APP_API_KEY} - get api key
+
+
+
+
+
+
+
+const getPopular = async () => {
+        const api1 = '45769aaeace1ed905e191f6d1e5daefa';
+        // const api2 = '';
+
+        // let api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${api1}&number=9`);
+
+        let api = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=45769aaeace1ed905e191f6d1e5daefa&language=en-US&page=1`);
+
+        let data = await api.json();
+
+        let arr = data.results;
+
+        // console.log(data.results);
+        // console.log(api.url);
+
+        const movie = arr[Math.floor(Math.random() * arr.length)];
+
+        console.log(movie);
+
+
+
+}
+getPopular();
+
+// api1 -> status: , ok: false, redirected: 
+
+// api2 ->  status: 200, ok: true, redirected: false
+// https://api.themoviedb.org/3/movie/popular?api_key=45769aaeace1ed905e191f6d1e5daefa&language=en-US&page=1
