@@ -62,7 +62,7 @@ const truncateString = (str, num) => {
           <div className='absolute w-full top-[55%] md:top-[50%] p-4 md:p-8 '>
             <h1 className='text-3xl md:text-5xl font-bold '>{movieTitle}</h1>
             <div className='my-4 '>
-              <button className='border bg-gray-300 text-black py-2 px-5 hover:bg-black hover:text-white transition ease-in duration-300'>Play</button>
+              <button className='border  text-white py-2 px-5 hover:bg-gray-300 hover:text-black transition ease-in duration-300'>Play</button>
               <button className='border  text-white py-2 px-5  ml-4  hover:bg-gray-300 hover:text-black transition ease-in duration-300'>Watch Later</button>
             </div>
             <p className='text-gray-400 text-sm'>Released: {movie?.release_date}</p>
